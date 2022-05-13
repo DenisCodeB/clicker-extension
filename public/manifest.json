@@ -1,0 +1,29 @@
+{
+    "name": "Clicker extension",
+    "version": "0.0.1",
+    "description": "Just simple free clicker! Select element, set limitations and have fun :D",
+    "manifest_version": 3,
+    "author": "DenisCodeB",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Just the clicker",
+        "default_icon": {
+            "16": "logo/layers16.png",
+            "32": "logo/layers32.png",
+            "48": "logo/layers48.png",
+            "128": "logo/layers128.png"
+        }
+    },
+    "icons": {
+        "16": "logo/layers16.png",
+        "32": "logo/layers32.png",
+        "48": "logo/layers48.png",
+        "128": "logo/layers128.png"
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["extension.js"]
+        }
+    ]
+}
