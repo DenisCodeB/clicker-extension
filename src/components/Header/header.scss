@@ -1,0 +1,44 @@
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+        padding: 0.5rem 0 0.125rem 0;
+        border-bottom: 0.063rem solid hsl(180, 100%, 80%);
+    }
+}
+.navbar {
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        font: {
+            size: 0.9rem;
+            family: Poppins-Light;
+            weight: normal;
+        }
+    }
+}
+.username {
+    color: hsl(180, 100%, 80%);
+    font: {
+        size: 0.9rem;
+        family: Poppins-Light;
+        weight: normal;
+    }
+}
+.settingImg {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+    opacity: 0.8;
+}

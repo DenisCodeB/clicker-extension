@@ -1,8 +1,11 @@
 import React from 'react'
+import Page from '../components/Page'
 
 const Clicker = () => {
     return (
-        <h1>CLICKER</h1>
+        <Page>
+            <h1>CLICKER</h1>
+        </Page>
     )
 }
 

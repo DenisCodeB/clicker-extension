@@ -1,4 +1,5 @@
 import React, { Children } from 'react'
+import './components.scss'
 
 const Page = props => {
     return (

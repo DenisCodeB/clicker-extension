@@ -6,7 +6,7 @@ const Navbar = () => {
         {
             id: 1,
             path: '/',
-            name: 'Main',
+            name: 'Menu',
             className: 'navbar__item'
         }
     ]

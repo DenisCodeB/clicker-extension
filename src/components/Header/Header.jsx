@@ -2,7 +2,9 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar/Navbar'
 import Username from './Username'
-import config from '../../assets/images/sustainable.png'
+import settingImg from '../../assets/images/setting.png'
+import './header.scss'
+import { animCircle } from './animCircle'
 
 const Header = () => {
     return (
@@ -16,7 +18,12 @@ const Header = () => {
             
             <Outlet />
 
-            <img src={config} alt='' />
+            <img 
+                className='settingImg' 
+                src={settingImg} 
+                onLoad={animCircle}
+                alt=''
+            />
         </>
     )
 }
