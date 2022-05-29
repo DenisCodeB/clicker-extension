@@ -1,0 +1,62 @@
+// Input component
+.input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+.input {
+    width: 70%;
+    background-color: transparent;
+    border: 1px solid hsl(180, 100%, 80%);
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    font: {
+        size: 1rem;
+    }
+    color:hsl(180, 100%, 80%);
+    text-align: center;
+    
+    &:active, &:focus {
+        outline: none;
+        border-color: hsl(180, 100%, 95%);
+    }
+}
+[type=number]::-webkit-inner-spin-button {
+    display: none;
+}
+.input-question {
+    position: relative;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    background-image: url('../../assets/images/question.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &__prompt {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all .3s linear;
+        background-color: hsl(0, 0%, 10%);
+        width: max-content;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.5rem;
+        border-radius: 1rem;
+        font: {
+            size: 0.75rem;
+        }
+        cursor: default;
+        user-select: none;
+    }
+    &:hover &__prompt {
+        visibility: visible;
+        opacity: 1;
+        color: hsl(180, 0%, 50%);
+    }
+}

@@ -1,8 +1,9 @@
-import React from 'react'
-import Page from '../components/Page'
-import Option from '../components/Option'
-import click from '../assets/images/clicker.png'
-import data from '../assets/images/data.png'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import Page from '../../components/Page'
+import Option from '../../components/Option'
+import click from '../../assets/images/clicker.png'
+import './menu.scss'
 
 const Menu = () => {
     const optionConfig = [
@@ -15,12 +16,11 @@ const Menu = () => {
         {
             key: 2,
             name: 'Data',
-            src: data,
             path: '/data'
         }
     ]
     return (
-        <Page>
+        <Page img='img menu'>
             <div className='option-wrapper'>
                 {
                     optionConfig.map(item => (

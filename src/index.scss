@@ -7,6 +7,10 @@ $activeLinkColor: hsl(180, 100%, 95%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Main Text';
+}
+html {
+    background-color: hsl(0, 0%, 10%);
 }
 #root {
     width: 300px;
@@ -16,6 +20,8 @@ $activeLinkColor: hsl(180, 100%, 95%);
     overflow: hidden;
     z-index: 0;
     margin: 0 auto;
+    border: 1px solid hsla(0, 50%, 95%, 0.3);
+    border-radius: 1rem;
 }
 a {
     color: $basicLinkColor;
@@ -33,8 +39,14 @@ a {
 }
 
 @font-face {
-    font-family: Poppins-Light;
+    font-family: 'Main Text';
     font-style: normal;
     font-weight: normal;
-    src: url('./assets/fonts/Poppins-Light.ttf');
+    src: url('./assets/fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Numeric text';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/Ubuntu-Light.ttf');
 }

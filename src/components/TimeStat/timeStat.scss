@@ -1,0 +1,32 @@
+.stat {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(180, 100%, 80%);
+    font: {
+        size: 1rem;
+    }
+
+    &__current {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: {
+            family: 'Numeric text';
+        }
+        color:hsl(180, 100%, 95%)
+    }
+
+    &__total {
+        font: {
+            family: 'Numeric text';
+        }
+    }
+}
+.digits {
+    font: {
+        family: 'Numeric text';
+    }
+}

@@ -1,0 +1,79 @@
+.button {
+    background-color: transparent;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+
+    &__text {
+        font: {
+            size: 0.9rem;
+        }
+    }
+    &__img {
+        position: relative;
+        transition: all .2s linear;
+        width: 0.75rem;
+        aspect-ratio: 1 / 1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        & path {
+            transition: all .2s linear;
+        }
+    }
+}
+.start-button {
+    border: 1px solid hsl(120, 100%, 80%);
+    & .button__text {
+        color: hsl(120, 100%, 80%);
+    }
+    &:hover .button__img path {
+        transform: translateX(0.1rem);
+        stroke: hsl(120, 100%, 95%);
+
+        &:first-child {
+            transform: translate(3px, 10px) rotateZ(-90deg);
+        }
+        &:last-child {
+            transform: translateY(7px) rotateZ(-90deg);
+        }
+    }
+}
+.clean-button {
+    flex-direction: row-reverse;
+    border: 1px solid hsl(60, 100%, 80%);
+    & .button__text {
+        color: hsl(60, 100%, 80%);
+    }
+    &:hover .button__img path {
+        transform: rotateZ(5deg);
+        fill: hsl(60, 100%, 95%);
+
+        &:first-child {
+            transform: translateX(-1px) rotateZ(-10deg);
+        }
+        &:nth-child(2) {
+            transform: translateY(-2px);
+            fill: hsl(0, 100%, 80%);
+        }
+    }
+}
+.cansel-button {
+    flex-direction: row-reverse;
+    border: 1px solid hsl(0, 100%, 80%);
+    &:hover .button__img {
+        transform: translate(-0.1rem, 0.1rem) rotateZ(10deg);
+    }
+    & .button__text {
+        color: hsl(0, 100%, 80%);
+    }
+    &:hover .button__img path {
+        stroke: hsl(0, 100%, 95%);
+
+        &:first-child {
+            d: path('M 2.5,2.5 L 7.5,8.5 Z')
+        }
+    }
+}

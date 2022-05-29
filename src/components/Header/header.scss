@@ -15,11 +15,14 @@
 .navbar {
     &__list {
         list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__item {
+        white-space: nowrap;
         font: {
             size: 0.9rem;
-            family: Poppins-Light;
             weight: normal;
         }
     }
@@ -28,7 +31,6 @@
     color: hsl(180, 100%, 80%);
     font: {
         size: 0.9rem;
-        family: Poppins-Light;
         weight: normal;
     }
 }
@@ -41,4 +43,5 @@
     aspect-ratio: 1 / 1;
     z-index: 1;
     opacity: 0.8;
+    transition: all .3s linear;
 }

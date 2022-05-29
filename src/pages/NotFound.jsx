@@ -1,8 +1,11 @@
 import React from 'react'
+import Page from '../components/Page'
 
 const NotFound = () => {
     return (
-        <h1>404 NotFound</h1>
+        <Page>
+            <h1>404 NotFound</h1>
+        </Page>
     )
 }
 

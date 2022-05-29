@@ -1,0 +1,45 @@
+// Page component
+#main {
+    position: relative;
+    transition: all .3s linear;
+    width: 100%;
+    height: 80%;
+    z-index: 9999;
+}
+.disappear {
+    opacity: 0;
+    transform: translateY(2rem) scale(0.9);
+}
+.section {
+    height: 100%;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .2s linear;
+}
+.change-img {
+    transform: translateY(-2rem) translateX(1rem) scale(0.3);
+    opacity: 0;
+}
+.menu {
+    background-image: url('../../assets/images/computer.png');
+}
+.clicker {
+    background-image: url('../../assets/images/hidden.png');
+}
+.clickerStart {
+    background-image: url('../../assets/images/inProcess.png');
+}
+.data {
+    background-image: url('../../assets/images/waiting.png');
+}

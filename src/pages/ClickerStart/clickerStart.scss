@@ -1,0 +1,17 @@
+// Clicker start page
+.info {
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    &__stat {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
