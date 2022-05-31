@@ -17,6 +17,11 @@ const Menu = () => {
             key: 2,
             name: 'Data',
             path: '/data'
+        },
+        {
+            key: 3,
+            name: 'Choice',
+            path: '/choice'
         }
     ]
     return (

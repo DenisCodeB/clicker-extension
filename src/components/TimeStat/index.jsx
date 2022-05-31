@@ -4,7 +4,6 @@ import './timeStat.scss'
 const TimeStat = props => {
     const [time, setTime] = useState(0)
     const convertToTotalTime = (units, time) => {
-        // if (time === 'Done') return 'ha'
         switch(units) {
             case 'm':
                 return ('0' + Math.floor(time / 60000)).slice(-2) + ':'

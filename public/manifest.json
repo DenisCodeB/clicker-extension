@@ -23,7 +23,16 @@
     "content_scripts":[
         {
             "matches":["<all_urls>"],
-            "js":["extension.js"]
+            "js":["content.js"]
         }
+    ],
+    "permissions": [
+        "storage",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
     ]
 }

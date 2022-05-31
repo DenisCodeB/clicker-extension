@@ -7,7 +7,7 @@ const ListItem = props => {
     const smoothSliding = useSmoothSliding()
     
     return (
-        <li className={props.className}>
+        <li className='navbar__item'>
             <Link to={props.path} onClick={e => {
                     e.preventDefault()
                     const pathname = e.target.getAttribute('href')

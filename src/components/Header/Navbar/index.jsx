@@ -11,23 +11,25 @@ const Navbar = () => {
             className: 'navbar__item'
         }
     ]
-    const clicker = {
+    const choice = {
         id: 2,
+        path: '/choice',
+        name: '/Choice',
+    }
+    const clicker = {
+        id: 3,
         path: '/clicker',
-        name: '/Clicker',
-        className: 'navbar__item'
+        name: '/Clicker'
     }
     const clickerStart = {
-        id: 3,
+        id: 4,
         path: '/clicker-start',
-        name: '/Started',
-        className: 'navbar__item'
+        name: '/Started'
     }
     const data = {
-        id: 4,
+        id: 5,
         path: '/data',
-        name: '/Data',
-        className: 'navbar__item'
+        name: '/Data'
     }
     const location = useLocation()
     const [listConfig, setListConfig] = useState(menu)
@@ -40,6 +42,8 @@ const Navbar = () => {
                 return [clickerStart]
             } else if (location.pathname === '/data') {
                 return [...prev, data]
+            } else if (location.pathname === '/choice') {
+                return [...prev, choice]
             } else return menu
         })
     }, [location.pathname])
@@ -49,7 +53,7 @@ const Navbar = () => {
             <ul className='navbar__list'>
                 {
                     listConfig.map(item => (
-                        <ListItem key={item.id} path={item.path} name={item.name} className={item.className} />
+                        <ListItem key={item.id} path={item.path} name={item.name} />
                     ))
                 }
             </ul>
