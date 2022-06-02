@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import { twitch } from './animCircle'
 
+// Custom hook for smooth sliding 
+// between pages
 const useSmoothSliding = () => {
     const navigate = useNavigate()
     const smooth = (e, pathname) => {
@@ -11,8 +13,8 @@ const useSmoothSliding = () => {
             mainContent.classList.toggle('disappear')
             const img = document.querySelector('.img')
             img.classList.toggle('change-img')
-            // Create new custom event method 'allow'
-            // for checking of matching url-s
+            // Create new custom event method ALLOW
+            // to prevent link to current PATHNAME
             e.allow = true
             setTimeout(() => {
                 navigate(pathname)

@@ -3,6 +3,9 @@ import ListItem from './ListItem'
 import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+    const location = useLocation()
+    // Define database for correct display
+    // of navbar
     const menu = [
         {
             id: 1,
@@ -31,7 +34,6 @@ const Navbar = () => {
         path: '/data',
         name: '/Data'
     }
-    const location = useLocation()
     const [listConfig, setListConfig] = useState(menu)
 
     useEffect(() => {
@@ -39,7 +41,7 @@ const Navbar = () => {
             if (location.pathname === '/clicker') {
                 return [...prev, clicker]
             } else if (location.pathname === '/clicker-start') {
-                return [clickerStart]
+                return [menu[0], clickerStart]
             } else if (location.pathname === '/data') {
                 return [...prev, data]
             } else if (location.pathname === '/choice') {

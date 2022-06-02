@@ -1,3 +1,6 @@
+// Handle button click
+// and send data of all inputs 
+// from popup to content-scripts
 const sendDataToContent = (elemArr, keyStorage) => {
     let dataArr = []
     for (const elem of elemArr) {

@@ -7,6 +7,7 @@ const ClickStat = props => {
         const data = localStorage.getItem(key)
         return data
     }
+    // Start click counter
     useEffect(() => {
         let interval, 
             delay = 1000 / getData('InputClicks'),

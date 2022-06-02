@@ -3,6 +3,8 @@ import './timeStat.scss'
 
 const TimeStat = props => {
     const [time, setTime] = useState(0)
+    // Convert miliseconds to time like 00:00:0
+    // for stopwatch
     const convertToTotalTime = (units, time) => {
         switch(units) {
             case 'm':
@@ -15,6 +17,8 @@ const TimeStat = props => {
                 return (Math.floor(time / 100) % 10).toString().slice(-2)
         }
     }
+    // Get total time from local storage 
+    // and recreate in total time
     const getData = useCallback(() => {
         let data = localStorage.getItem('InputTime')
         let m = convertToTotalTime('m', data)
@@ -22,6 +26,7 @@ const TimeStat = props => {
         let ms = convertToTotalTime('ms', data)
         return m + s + ms
     })
+    // Start stopwatch
     useEffect(() => {
         let totalTime = Number.parseInt(localStorage.getItem('InputTime'))
         let interval = null

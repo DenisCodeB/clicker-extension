@@ -6,6 +6,8 @@ import click from '../../assets/images/clicker.png'
 import './menu.scss'
 
 const Menu = () => {
+    // Define database for menu page options
+    // and set right routing
     const optionConfig = [
         {
             key: 1,

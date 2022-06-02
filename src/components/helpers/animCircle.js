@@ -1,4 +1,6 @@
-let anim
+let anim = null
+// Animate top circle with 
+// Web Animations API 
 const animCircle = () => {
     const circle = document.querySelector('.settingImg')
     const animConfig = {
@@ -11,10 +13,15 @@ const animCircle = () => {
     ]
     anim = circle.animate(animStyles, animConfig)
 }
+
+// Smooth increasing speed for circle 
 const speedUp = () => {
     anim.playbackRate *= 30
     setTimeout(() => anim.playbackRate = 1, 500)
 }
+
+// Smooth ywitching circle
+// for incorrect user actions
 const twitch = () => {
     let count = 0
     const twitching = () => {

@@ -3,8 +3,8 @@ import React from 'react'
 const SelectElem = props => {
     return (
         <>
-            <p className='select__first'>Select the element on the page.</p>
-            <p className='select__second'>Just click to it!</p>
+            <h2 className='select__first'>Select the element on the page.</h2>
+            <h3 className='select__second'>Just click to it!</h3>
         </>
     )
 }

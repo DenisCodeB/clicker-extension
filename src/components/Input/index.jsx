@@ -4,12 +4,15 @@ import './input.scss'
 const Input = props => {
     const [time, setTime] = useState(0)
     const [clicks, setClicks] = useState(0)
+    // Dynamic data transfer 
+    // to local storage 
     useEffect(() => {
         localStorage.setItem('InputTime', time)
     }, [time])
     useEffect(() => {
         localStorage.setItem('InputClicks', clicks)
     }, [clicks])
+    
     return (
         <div className='input-wrapper'>
             <input className='input'
