@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { speedUp } from '../../helpers/animCircle' 
-import { useSmoothSliding } from '../../helpers/useSmoothSliding'
+
+import { speedUp } from '../../../../../helpers/animCircle' 
+import { useSmoothSliding } from '../../../../../helpers/useSmoothSliding'
 
 const ListItem = props => {
     const smoothSliding = useSmoothSliding()

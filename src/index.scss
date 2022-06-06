@@ -11,6 +11,7 @@ $activeLinkColor: hsl(180, 100%, 95%);
 }
 html {
     background-color: hsl(0, 0%, 10%);
+    font-size: 1rem;
 }
 #root {
     width: 300px;
@@ -21,6 +22,7 @@ html {
     z-index: 0;
     margin: 0 auto;
     border: 1px solid hsla(0, 50%, 95%, 0.3);
+    font-size: 1rem;
 }
 a {
     color: $basicLinkColor;

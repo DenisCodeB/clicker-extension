@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+
 import Page from '../../components/Page'
-import './data.scss'
+import './style.scss'
 
 const Data = () => {
     return (

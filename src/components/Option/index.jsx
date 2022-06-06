@@ -1,7 +1,9 @@
 import React from 'react'
-import { speedUp } from '../helpers/animCircle'
-import { useSmoothSliding } from '../helpers/useSmoothSliding'
-import './option.scss'
+
+import { speedUp } from '../../helpers/animCircle'
+import { useSmoothSliding } from '../../helpers/useSmoothSliding'
+
+import './style.scss'
 
 const Option = props => {
     const smoothSliding = useSmoothSliding()

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import '../TimeStat/timeStat.scss'
+
+import '../style.scss'
 
 const ClickStat = props => {
     const [clicks, setClicks] = useState(0)

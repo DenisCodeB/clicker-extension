@@ -26,7 +26,14 @@ const SvgSign = props => {
                 <path d='M 2.5,2.5 L 7.5,7.5 Z' stroke='#FF9999' />
                 <path d='M 7.5,2.5 L 2.5,7.5 Z' stroke='#FF9999' />
             </svg>
-
+        )
+    } else if (props.name === 'Confirm') {
+        return (
+            // Check
+            <svg viewBox="0 0 10 10" fill="none" className='button__img' xmlns="http://www.w3.org/2000/svg">
+                <path d="M 2.16663,5 L 4.66663,7.5" stroke="#99FF99" />
+                <path d="M 4.66663,7.5 L 8.83329,2.5" stroke="#99FF99" />
+            </svg>
         )
     }
 }

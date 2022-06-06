@@ -1,10 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Navbar from './Navbar'
-import Username from './Username'
+
+import { animCircle } from '../../helpers/animCircle'
+
 import settingImg from '../../assets/images/setting.png'
-import './header.scss'
-import { animCircle } from '../helpers/animCircle'
+import Navbar from './components/Navbar'
+import Username from './components/Username'
+import './style.scss'
 
 const Header = () => {
     return (

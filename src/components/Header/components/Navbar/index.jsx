@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import ListItem from './ListItem'
 import { useLocation } from 'react-router-dom'
+
+import ListItem from './components/ListItem'
 
 const Navbar = () => {
     const location = useLocation()

@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+
+import click from '../../assets/images/clicker.png'
 import Page from '../../components/Page'
 import Option from '../../components/Option'
-import click from '../../assets/images/clicker.png'
-import './menu.scss'
+import './style.scss'
 
 const Menu = () => {
     // Define database for menu page options

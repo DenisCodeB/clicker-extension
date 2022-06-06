@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import './input.scss'
+
+import './style.scss'
 
 const Input = props => {
     const [time, setTime] = useState(0)

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+
+import ClickerStart from './pages/ClickerStart'
 import Header from './components/Header'
 import Menu from './pages/Menu'
 import Clicker from './pages/Clicker'
 import Choice from './pages/Choice'
 import Data from './pages/Data'
-import ClickerStart from './pages/ClickerStart'
 // import NotFound from './pages/NotFound'
 
 const App = () => {

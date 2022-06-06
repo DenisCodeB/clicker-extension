@@ -6,6 +6,7 @@
     align-items: center;
     padding: 0.25rem 0.5rem;
     cursor: pointer;
+    user-select: none;
 
     &__text {
         font: {
@@ -75,5 +76,18 @@
         &:first-child {
             d: path('M 2.5,2.5 L 7.5,8.5 Z')
         }
+    }
+}
+.confirm-button {
+    flex-direction: row-reverse;
+    border: 1px solid hsl(120, 100%, 80%);
+    &:hover .button__img {
+        transform: translateX(-0.1rem);
+    }
+    & .button__text {
+        color: hsl(120, 100%, 80%);
+    }
+    &:hover .button__img path {
+        stroke: hsl(120, 100%, 95%);
     }
 }

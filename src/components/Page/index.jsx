@@ -1,6 +1,7 @@
 import React, { Children, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import './page.scss'
+
+import './style.scss'
 
 const Page = props => {
     const location = useLocation()

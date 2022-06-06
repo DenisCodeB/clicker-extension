@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+
 import { twitch } from './animCircle'
 
 // Custom hook for smooth sliding 
