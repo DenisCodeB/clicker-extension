@@ -20,6 +20,23 @@ Clicker uses a number of famous projects to work properly:
 - [NodeJS] - great packeges
 - [Figma] - fascinating design
 
+## Instructions for use👈
+
+1. Select the option **"Choice"**.<br><br>
+![Like this](./readme/menu.png)
+
+2. Select click mode: *one* or *two* elements. Press Confirm and click to elements on your page (**only needed**).<br><br>
+![Like this](./readme/select.png)
+
+3. Open extension again and select option **"Clicker"**. <br><br>
+![Like this](./readme/clicker.png)
+
+4. Input nedded total time (in ms: 10000ms = 10s) and clicks per second (in clc/s: 5clc/s = 5 clicks per second). Click **"Start"**! <br><br>
+![Like this](./readme/clickerOpt.png)
+
+5. Have fun! <br><br>
+![Like this](./readme/clickerStart.png)
+
 > Happy code to you! 💛
 
 [//]: # (Thanks Max)
