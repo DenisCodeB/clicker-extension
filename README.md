@@ -31,7 +31,7 @@ Clicker uses a number of famous projects to work properly:
 3. Open extension again and select option **"Clicker"**. <br><br>
 ![Like this](./readme/clicker.png)
 
-4. Input nedded total time (in ms: 10000ms = 10s) and clicks per second (in clc/s: 5clc/s = 5 clicks per second). Click **"Start"**! <br><br>
+4. Input nedded total time (in ms: 10000ms = 10s) and clicks per second (in clc/s: 12clc/s = 12 clicks per second). Click **"Start"**! <br><br>
 ![Like this](./readme/clickerOpt.png)
 
 5. Have fun! <br><br>
